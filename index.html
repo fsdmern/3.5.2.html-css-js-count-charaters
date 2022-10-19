@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>TEXT AREA INPUT</h1>
+    <form class="wrapper">
+      <h3>Dynamic Character Count and Limit</h3>
+      <div class="textarea-wrapper">
+        <textarea
+          name=""
+          id="textarea"
+          cols="90"
+          rows="10"
+          placeholder="Enter your comment"
+          onkeydown="charCount(this)"
+        ></textarea>
+      </div>
+
+      <div class="result-cont">
+        <div class="result">
+          Total Characters: <span id="char-count">0</span>
+        </div>
+        <div class="result">
+          Remaining Characters: <span id="remain-count">0</span>
+        </div>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>

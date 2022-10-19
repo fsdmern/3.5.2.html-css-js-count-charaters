@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 5rem 0 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  margin: auto; /*center entire wrapper*/
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*Center the text area*/
+.textarea-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*Add padding inside text box*/
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.result-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.result {
+  font-weight: bolder;
+}
+
+input {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+}
